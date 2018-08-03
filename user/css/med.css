@@ -1,0 +1,43 @@
+.dialog {
+  width: 100%;
+  display: none;
+  min-height: 40px;
+  max-height: 330px;
+  overflow: scroll;
+  position: relative;
+ 
+}
+.dialog.open {
+  display: block;
+}
+.dialog div {
+  padding: 20px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.dialog div:hover {
+  background: #f2f2f2;
+}
+
+.d {
+  width: 100%;
+  display: none;
+  min-height: 40px;
+  max-height: 330px;
+  overflow: scroll;
+  position: relative;
+ 
+}
+.d.open {
+  display: block;
+}
+.d div {
+  padding: 20px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.d div:hover {
+  background: #f2f2f2;
+}

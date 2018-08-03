@@ -1,0 +1,21 @@
+.d {
+  width: 100%;
+  display: none;
+  min-height: 40px;
+  max-height: 330px;
+  overflow: scroll;
+  position: relative;
+ 
+}
+.d.open {
+  display: block;
+}
+.d div {
+  padding: 20px 10px;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.d div:hover {
+  background: #f2f2f2;
+}

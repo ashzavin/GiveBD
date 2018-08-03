@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from jollythemes.com/html/jollymedic/appointment.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2017 15:29:12 GMT -->
+<head>
+  
+  
+   <script type="text/javascript">
+		
+	function validateForm()
+    {
+    var a=document.forms["Form"]["date"].value;
+	
+	var today = new Date();
+	var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+
+	var yyyy = today.getFullYear();
+	if(dd<10){
+		dd='0'+dd;
+	} 
+	if(mm<10){
+		mm='0'+mm;
+	} 
+	var today = mm+'/'+dd+'/'+yyyy;
+	
+	var max="2019-03-27";
+	var min="2017-04-20";
+	
+	//var timeDiff = Math.abs(today.getTime()-a.getTime());
+	//var diffDays = Math.ceil(timeDiff / (1000 * 3600 * 24)); 
+	
+	
+   if (a<min || a>max)
+      {
+	
+      document.getElementById("date").innerHTML = a;
+	  document.getElementById("date").style.color = "red";
+	 // document.getElementById("date").style.font-weight = "bold";
+      return false;
+      }
+    }
+			
+	</script>
+	
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+
+  <title>Give Bangladesh</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap Styles -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <link href="css/main.css" rel="stylesheet" type="text/css">
+  
+  <!-- Awesome Icons -->
+  <link rel="stylesheet" href="css/font-awesome.css">
+  <!-- Flexslider -->
+  <link href="css/flexslider.css" rel="stylesheet">
+  <!-- Carousel -->
+  <link href="css/owl-carousel.css" rel="stylesheet">
+  <!-- SLIDER REVOLUTION 4.x CSS SETTINGS -->
+  <link rel="stylesheet" type="text/css" href="rs-plugin/css/settings.css" media="screen" />
+  <!-- Styles -->
+  <link href="style.css" rel="stylesheet">
+  
+
+  
+  <!-- Google Fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,400italic,700,700italic,900,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic,900' rel='stylesheet' type='text/css'>
+  
+  <!-- Support for HTML5 -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Enable media queries on older bgeneral_rowsers -->
+  <!--[if lt IE 9]>
+    <script src="js/respond.min.js"></script>  <![endif]-->
+	
+	
+	
+	
+	
+	
+
+</head>
+<body>
+
+
+
+<div class="animationload">
+<div class="loader">Loading...</div>
+</div>
+
+<div class="topbar">
+    	<div class="container">
+        	<div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    
+                </div><!-- end col -->
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="topbar_social pull-right">
+						
+						
+						<a href="#"><i class="fa fa-user"></i> Login/Sign up</a>
+						
+					</div><!-- end social icons -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end topbar -->
+    
+	<header class="header">
+		<div class="container">
+			<nav class="navbar yamm navbar-default">
+				<div class="navbar-header">
+                    <button type="button" data-toggle="collapse" data-target="#navbar-collapse-1" class="navbar-toggle">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand"><img src="images/logo.png" alt="GiveBd"></a>
+        		</div><!-- end navbar-header -->
+                
+				<div id="navbar-collapse-1" class="navbar-collapse collapse navbar-right">
+					<ul class="nav navbar-nav">
+					<li><a href="index.html">Home</a></li>
+                        <li class="dropdown"><a id="active" href="#" data-toggle="dropdown" class="dropdown-toggle">Service </a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="appointment.html">Medicine Donation</a></li>
+                                <li><a href="404.html">Money Donation</a></li>
+                                <li><a href="404.html">Cloth Donation</a></li>
+                                <li><a href="404.html">Blood Donation</a></li>
+                                
+                            </ul><!-- end dropdown-menu -->
+                        </li><!-- end standard drop down -->
+                        
+   
+						<li class="dropdown"><a href="#" data-toggle="dropdown" class="dropdown-toggle">Medicine Catagory</a>
+
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="medicine.php">Old People</a></li>
+                                <li><a href="medicine.php">Child</a></li>
+                                <li><a href="medicine.php">For All</a></li>           
+                            </ul><!-- end dropdown-menu -->
+                        </li><!-- end standard drop down -->
+                                 
+						</li><!-- end drop down -->
+					   
+						
+                        <li><a href="#contact">Contact Us</a></li>
+                        
+					</ul><!-- end navbar-nav -->
+				</div><!-- #navbar-collapse-1 -->
+			</nav><!-- end navbar yamm navbar-default -->
+		</div><!-- end container -->
+    </header><!-- end header -->
+	
+	
+	
+	<div class="shadow"></div>
+
+	<div class="post-wrapper-top clearfix">
+		<div class="container">
+			<div class="col-lg-12">
+				<h2 style="color: red;">Donation Complete</h2>
+                <ul class="breadcrumb pull-right">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li style="font-size: 20px;">Donation Form</li>
+                </ul>
+			</div>
+		</div>
+	</div><!-- end post-wrapper-top -->
+
+	<div class="white-wrapper">
+    	<div class="container">
+    		<div id="content" class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+				<form role="form" class="row online_form_builder_big" name="Form" 
+				method="get" onsubmit="return validateForm()" action="a1.php" autocomplete="off">
+				
+				
+				
+				
+					
+					
+			        <div class="clearfix"></div>
+					<br>
+					
+					<div class="col-md-6 autocomplete">
+                    	<label for="first_name">Medicine Name (required)</label>
+                        <input type="text" class="form-control" name="name" id="medicine" placeholder="" required>
+                    </div>
+					<div class="dialog">   
+					</div>
+					
+					<div class="col-md-6 auto">
+                    	<label for="first_name">Medicine Company Name (required)</label>
+                        <input type="text" class="form-control" id="first_name" placeholder="" name="company" required>
+                    </div><div class="d"></div>
+					
+					<div class="clearfix"></div>
+					<br>
+					
+			
+					<div class="col-md-6">
+						<label>Quantity (Total)</label>
+                        <input class="form-control" type="number" name="quantity" min="20" max="200" required>
+                      
+                    </div>
+					
+					
+					
+					<div class="col-md-6">
+						<label id="date">Expiry Date</label>
+                        <input class="form-control" type="date" name="date" id="a" required max="2020-01-31" min="2016-01-01">
+                      
+                    </div>
+                    <div class="clearfix"></div>
+					<br><br>
+					
+					<div class="col-md-3">
+                    <button class="btn btn-primary" style="position:relative; margin-left: 190px;">Donate Now</button>    
+                    </div> 
+					<button class="btn btn-primary" style="position:relative; margin-left: 200px;">Donate More </button>  
+					
+		            
+					
+					
+					
+				</form>
+            </div><!-- end content -->
+			
+			
+			
+			
+    
+    		<div id="sidebar" class="col-lg-4 col-md-4 col-sm-4 col-xs-12">   
+            	<div class="widget">
+                    <div id="tabbed_widget" class="tabbable">
+                        <ul class="nav nav-tabs">
+                            <li class="active"><a href="#recent" data-toggle="tab">RECENT</a></li>
+                            <li><a href="#new" data-toggle="tab">POPULAR</a></li>
+                            <li><a href="#commentstab" data-toggle="tab">FEEDBACK</a></li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="recent">
+                                <ul class="recent_posts_widget">
+                                    <li>
+                                    <a href="#"><img src="demos/1.jpg" alt="" />Medicine for fever</a>
+                                    <a class="readmore_widget" href="#">Napa</a>
+                                      
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="demos/55.jpg" alt="" />Medicine for cold</a>
+                                        <a class="readmore_widget" href="#">Flazil</a>
+                                       
+                                    </li>
+                                    <li>
+                                    <a href="#"><img src="demos/1.jpg" alt="" />Medicine for back pain</a>
+                                    <a class="readmore_widget" href="#">Foxa</a>
+                                       
+                                    </li>
+                                </ul><!-- recent posts -->  
+                            </div>
+                            <div class="tab-pane" id="new">
+                                <ul class="recent_posts_widget">
+                                    <li>
+                                    <a href="#"><img src="demos/1.jpg" alt="" />Medicine for headache</a>
+                                    <a class="readmore_widget" href="#">Aspirin</a>
+                                       <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div><!-- rating -->
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="demos/55.jpg" alt="" />Medicine for cold</a>
+                                        <a class="readmore_widget" href="#">Napa extra</a>
+                                       <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div><!-- rating -->
+                                    </li>
+                                    <li>
+                                    <a href="#"><img src="demos/1.jpg" alt="" />Medicine for diarrhea</a>
+                                    <a class="readmore_widget" href="#">Omaprazol</a>
+                                       <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div><!-- rating -->
+                                    </li>
+                                </ul><!-- recent posts -->  
+                            </div>
+                            <div class="tab-pane" id="commentstab">
+                                <ul class="recent_posts_widget">
+                                    <li>
+                                    <a href="#"><img src="demos/client_01.jpg" alt="" />Ash: This site is a life saver</a>
+                                    <a class="readmore_widget" href="#">January 09, 2017</a>
+                                       <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div><!-- rating -->
+                                    </li>
+                                    <li>
+                                        <a href="#"><img src="demos/client_02.jpg" alt="" />Nafin: Best medicine distribution site.</a>
+                                        <a class="readmore_widget" href="#">Feburay 16, 2016</a>
+                                       <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div><!-- rating -->
+                                    </li>
+                                    <li>
+                                    <a href="#"><img src="demos/client_01.jpg" alt="" />Suha: This is a helpful site.</a>
+                                    <a class="readmore_widget" href="#">Feburay 16, 2015</a>
+                                       <div class="rating">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star-o"></i>
+                                        </div><!-- rating -->
+                                    </li>
+                                </ul><!-- recent posts -->  
+                            </div>
+                        </div><!-- end tab content -->
+                    </div><!-- end tab pane -->
+                </div><!-- end widget -->
+            </div><!-- end sidebar -->
+    	</div><!-- end container -->
+    </div><!-- end white-wrapper -->
+    
+    <!--footer-->
+	<div class="custom-wrapper"  id="contact">
+    	<div class="container">
+       		<div class="newsletter_wrapper">
+            
+            	<h4 style="color:white;">Over <mark>100,000</mark> People Trust us. Get free Medicine<br>
+				And Donate Your Spare Medicine, Subscribe us</h4>
+
+                <div class="row margin-top">
+                    <form id="loginform" method="post" name="loginform">
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <input type="text" class="form-control" placeholder="Your Email Address">
+                                </div>
+                            </div>
+                        </div>      	
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                    <input type="text" class="form-control" placeholder="Your Phone Number">
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="clearfix"></div><br>
+                        <button class="btn btn-default btn-lg" style="background:#0EB8EA;">Subscribe Now</button>    
+                    </form>
+                </div>
+                                 
+            </div><!-- end newsletter_wrapper -->
+       	</div><!-- end container -->
+    </div><!-- end custom_wrapper -->
+
+    
+  
+    
+    <div class="copyright">
+    	<div class="container">
+        	<div class="row">
+               <!-- <div class="col-lg-5 col-md-6 col-sm-12">-->
+                    <div class="copyright-text" style="text-align:center;">
+                        <p>Copyright © 2017 - GIVEBangladesh Medicine Donation Website</p>
+                    </div><!-- end copyright-text -->
+                </div><!-- end widget -->
+             <!--   <div class="col-lg-7 col-md-6 col-sm-12">
+                    <div class="footer-menu">
+                        <ul class="menu pull-right">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Service</a></li>
+                            <li><a href="#">Med Catagory</a></li>
+                            <li><a href="#">Feedback</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div><! end large-7 --> 
+         <!--  </div><! end row --> 
+        </div><!-- end container -->
+    </div><!-- end copyrights -->
+    
+	<div class="dmtop">Scroll to Top</div>
+    
+	<!-- Main Scripts-->
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+	<script src="js/menu.js"></script>
+	<script src="js/retina-1.1.0.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/main.js"></script>
+
+	<!-- CALENDAR WIDGET  -->
+	
+   
+</body>
+
+<!-- Mirrored from jollythemes.com/html/jollymedic/appointment.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Feb 2017 15:29:16 GMT -->
+</html>
